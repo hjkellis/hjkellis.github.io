@@ -1,5 +1,5 @@
 +++
-title = "Radical AI—Skills Demo"
+title = "Demo"
 date = "2025-05-28"
 
 [taxonomies]
@@ -15,9 +15,6 @@ This project includes:
 - ROS2 digital twin for visualization of the UR3e arm.
 - Qt dashboard for monitoring robot telemetry data.
 - Instrumentation integration example.
-
-# Why?
-I think that the work being done at Radical AI is awesome and I would love to be a part of it. I built and designed these projects over the last two days as a skills demo.
 
 # Digital Twin
 
@@ -62,7 +59,7 @@ Of course, I can only simulate the telemetry data here.
 
 
 # Sensor Integration
-It is necessary for an autonomous laboratory to incorporate many sensors to ensure accurate estimation of the lab's state. I believe that my knowledge of signal processing on both the analog and digital side can be a valuable addition to Radical's team.
+It is necessary for an autonomous laboratory to incorporate many sensors to ensure accurate estimation of the lab's state.
 
 {% mermaid() %}
 graph LR 
@@ -83,6 +80,7 @@ graph LR
     style F fill:#6f6,stroke:#333
     style G fill:#6f6,stroke:#333
 {% end %}
+
 <center>
     <i>Typical signal processing pipeline</i>
 </center>

@@ -2,4 +2,20 @@
 
 {% block main_content %}
     {{ post_macros::home_page(section=section) }}
+
+    <h1>Highlighted Projects</h1>
+    {% set project_highlights = [
+        get_page(path="projects/robotic_arm.md"),
+        get_page(path="projects/mirror.md"),
+    ] %}
+    <main class="card-grid compact">
+        {{ post_macros::cards_posts(pages=project_highlights) }}
+    </main>
+
+    <h1>Recent Posts</h1>
+    <main class="post-list">
+        {% set section = get_section(path="posts/_index.md") %}
+        {{ post_macros::list_posts(pages=section.pages | slice(end=5)) }}
+    </main>
+
 {% endblock main_content %}

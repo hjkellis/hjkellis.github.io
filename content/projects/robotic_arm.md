@@ -1,6 +1,6 @@
 +++
 title = "Robotic Arm"
-description = "Hardware and software for a 6-axis robot"
+description = "Hardware and software for a 6-DOF desktop robotic arm."
 weight = 0
 
 [extra]

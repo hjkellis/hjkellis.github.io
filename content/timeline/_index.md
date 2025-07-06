@@ -1,25 +1,31 @@
 +++
 title = "Timeline of my experience"
-template = "homepage.html"
+template = "timeline.html"
 +++
 <!-- experience timeline -->
 <div class="timeline">
+
   <div class="timeline-item">
     <div class="timeline-content">
-      <div class="timeline-date">2023 &ndash; Present</div>
       <div class="timeline-description">
         <div class="container">
           <div class="image">
-            <!--<img src="assets/images/VT.png" height="100" width="100">-->
+            <img src="/images/VT.png" height="100" width="100">
+            <br>
+            <br>
+            <div class="timeline-date">2023-2025</div>
+            <hr>
           </div>
           <div class="text">
-                Currently, I am working on my Master's thesis focusing on control theory.
+                    <img src="/images/world_example.png" height="140" width=auto style="float:right; margin-right: 15px;">
+            Master of Science in Computer Engineering at Virginia Tech through the Accelerated Master's Program.<br><br>
+            My thesis focused on robotics and I worked under the advisory of Professors Thinh Doan and Michael Hsiao.
           </div>
         </div>
       </div>
     </div>
   </div>
-  
+
   <div class="timeline-item">
     <div class="timeline-content">
       <div class="timeline-description">

@@ -5,7 +5,7 @@ template = "homepage.html"
 +++
 
 <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 20px;">
-  <img src="/images/profile_pic.jpg" alt="profile picture" style="width: 400px; max-width: 100%;">
+  <img src="/images/profile_pic.jpg" alt="profile picture" style="width: 300px; max-width: 100%;">
   <div style="flex: 1; min-width: 250px;">
     <p>
       I am an Electrical & Computer Engineer with interests in control systems, robotics, and autonomy.
@@ -19,4 +19,3 @@ template = "homepage.html"
     <p><a href="/pdfs/Ellis-Hunter-Resume.pdf">PDF Resume</a></p>
   </div>
 </div>
-

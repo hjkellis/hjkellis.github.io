@@ -1,0 +1,15 @@
+.card-grid.compact {
+    display: grid;
+    gap: 1rem;
+}
+
+.card-grid.compact .card {
+    padding: 0.75rem;
+    font-size: 0.9rem;
+    max-width: 100%;
+}
+
+.card-grid.compact .card img,
+.card-grid.compact .card svg {
+    display: none;
+}
