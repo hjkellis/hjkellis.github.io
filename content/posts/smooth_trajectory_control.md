@@ -1,5 +1,5 @@
 +++
-title = "Smooth Cartesian Path Planning"
+title = "Smooth Trajectory Control"
 date = "2025-07-06"
 
 [taxonomies]
@@ -37,7 +37,7 @@ graph LR
     %% style G fill:#6f6,stroke:#333
 {% end %}
 
-Time parameterized joint trajectory angles are calculated using the ```MoveIt!``` IK solver which are then sent over serial to a ring buffer which are then converted into steps, these steps are then executed by the ISR to achieve the smooth, continuous, cartesian path-planning.
+Time parameterized joint trajectory angles are calculated using the ```MoveIt!``` IK solver which are then sent over serial to a ring buffer which are then converted into steps, these steps are then executed by the ISR to achieve the smooth, continuous, cartesian trajectory control.
 
 # Code
 

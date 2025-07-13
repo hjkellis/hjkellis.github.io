@@ -4,7 +4,7 @@ description = "Hardware and software for a 6-DOF desktop robotic arm."
 weight = 0
 
 [extra]
-local_image = "/images/robot_arm.png"
+local_image = "/images/arm.jpg"
 # link_to = "https://github.com/hunterwellis/Manipulator-Environment"
 +++
 
@@ -67,3 +67,10 @@ Closed-loop control of the stepper motors was managed by the custom RAMPS firmwa
 # Software
 The ROS2 packages for this project can be found [here](https://github.com/hunterwellis/Manipulator-Environment).
 
+
+<center>
+    <img src="/images/robot_arm.png" height="350" width=auto style="margin-left: auto; margin-right: auto; display: block;">
+    <i>
+        Kinematic chain visualization (RViz)
+    </i>
+</center>
