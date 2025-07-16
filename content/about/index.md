@@ -2,7 +2,9 @@
 title = "About"
 +++
 
-<img src="/images/pfp.jpeg" alt="profile picture" style="margin-left: auto; margin-right: auto; display: block; width: 300px;">
+<div style="text-align: center;">
+    <img src="/images/profile_pic.jpg" alt="profile picture" style="height: 300px; width: auto;">
+</div>
 
 # Skills & Interests
 - Robotics
