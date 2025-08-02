@@ -22,7 +22,14 @@ Lululemon stopped producing these mirrors and they require users to pay for a su
 
 I only made slight modifcations to the internals of the mirror to get it to work how I wanted, this included replacing the display driver and SBC that came with the mirror with a matching display driver I found on ebay and a Raspberry Pi 3 - Model B that I had sitting around since highschool. After that it was just a matter of some cable management to route power to the RPI and the hardware was all finished.
 
-From there I just SSHed into the RPI and had my way with this machine.
+<center>
+    <img src="/images/mirror_kb.jpg" height="350" width=auto style="margin-left: auto; margin-right: auto; display: block;">
+    <i>
+        RPI Desktop Displayed on Mirror
+    </i>
+</center>
+
+From there I accesssed the Pi via SSH and had my way with this machine.
 
 # Software
 // TODO: software desciption

@@ -32,7 +32,7 @@ Here is the very simple code snippet of my controller logic. $T_s$ and other con
 ```python
 err = -obs[2]  # pole angle
 err_d = err - prev_errs[0]
-err_i = Ts * sum(prev_errs);
+err_i = Ts * sum(prev_errs)
 
 ctrl_sig = Kp * err + Ki * err_i + Kd * err_d
 

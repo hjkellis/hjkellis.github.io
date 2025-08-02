@@ -25,12 +25,15 @@ The goal for the hardware side of this project was to reduce price while maintai
 The robotic arm consists of stepper motors, belts, pulleys, and 3D-printed rigid bodies. The first 5 joints (J1 to J5) use bipolar NEMA 17 stepper motors, while the last joint (J6), responsible for rotating the end effector, uses a bipolar NEMA 8 stepper motor. All belts are off-the-shelf GT2 timing belts. Ball and shunt bearings were also used in various sizes to reduce friction between joints.
 
 <center>
-<img src="/images/stepper_feedback_1.png" height="200" width=auto style="margin-left: 250; margin-right: auto; display: block;float: left;">
-<img src="/images/stepper_feedback_2.png" height="200" width=auto style="margin-left: auto; margin-right: 250; display: block;float: right;">
-<div style="clear: both;"></div>
+<div style="display: flex; justify-content: center; align-items: center; gap: 20px;">
+    <img src="/images/stepper_feedback_1.png" height="200" style="width: auto;">
+    <img src="/images/stepper_feedback_2.png" height="200" style="width: auto;">
+</div>
+<div style="text-align: center; margin-top: 10px;">
     <i>
         Stepper motors with feedback sensors
     </i>
+</div>
 </center>
 
 ## Electrical

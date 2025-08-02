@@ -26,8 +26,10 @@ Here are the results:
 <center>Landing the rocket at the origin.</center>
 <br>
 
-<img src="/images/LQI_trajectory_landing.gif" height="350" width=auto style="float: left; margin-left: auto; margin-right: auto; display: block;">
-<img src="/images/LQI_trajectory_graphs.jpg" height="350" width=auto style="float: right; margin-left: auto; margin-right: auto; display: block;">
-<div style="clear: both;"></div>
-
-<center>Landing the rocket in <i>chopsticks</i>, based on a simple flight trajectory.</center>
+<div style="display: flex; justify-content: center; align-items: center; gap: 20px;">
+    <img src="/images/LQI_trajectory_landing.gif" height="350" style="width: auto;">
+    <img src="/images/LQI_trajectory_graphs.jpg" height="350" style="width: auto;">
+</div>
+<div style="text-align: center; margin-top: 10px;">
+    Landing the rocket in <i>chopsticks</i>, based on a simple flight trajectory.
+</div>

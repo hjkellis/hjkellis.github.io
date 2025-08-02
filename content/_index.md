@@ -4,7 +4,7 @@ template = "homepage.html"
 +++
 
 <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 20px;">
-  <img src="/images/ta.jpg" alt="profile picture" style="width: 300px; max-width: 100%;">
+  <!-- <img src="/images/profile_pic.jpg" alt="profile picture" style="width: 300px; max-width: 100%;"> -->
   <div style="flex: 1; min-width: 250px;">
     <p>
       I am a <span id="ageDisplay"></span> year old Electrical & Computer Engineer with interests in control systems, robotics, and autonomy.

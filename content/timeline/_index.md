@@ -37,14 +37,15 @@ template = "timeline.html"
             <hr>
           </div>
           <div class="text">
-                        I worked at NASA's Marshall Space Flight Center with the Jacobs Space Exploration Group as a Thrust Vector Control Intern, developing the active hardware and software components of their new Active Inertial Load Simulator for the Mars Ascent Vehicle.<br><br>
-                    <img src="/images/VAB.jpg" height="200" width=auto style="float:right; margin-left: 15px;">
                     <video controls="" height="200" width=auto name="Load Simulating Actuator" style="float:right; margin-left: 15px;" autoplay="" muted="">
                         <source src="/videos/actuator.MOV">
                     </video>
-                        Hardware elements that I aided in the integration of included measurement equipment such as an LVDT and full-bridge pancake load cell and test equipment such as an industrial electromechanical actuator (EMA), which entailed characterization testing and modeling of the physical characteristics of the actuator.<br><br>
-                        The software that I developed included a non-linear model of the EMA and software tools used to test EMAs.
-                        In this video you can see the characterized EMA in the closed-loop system being used to model the dynamics of a mass-spring-damper!
+                        I worked with the Jacobs Space Exploration Group as a Thrust Vector Control Intern, developing the active hardware and software components of their new Active Inertial Load Simulator at NASA's Marshall Space Flight Center.<br><br>
+                        In this video you can see an actuator modeling the dynamics of a mass-spring-damper.
+                    <!-- <img src="/images/VAB.jpg" height="200" width=auto style="float:right; margin-left: 15px;"> -->
+                        <!-- Hardware elements that I aided in the integration of included measurement equipment such as an LVDT and full-bridge pancake load cell and test equipment such as an industrial electromechanical actuator (EMA), which entailed characterization testing and modeling of the physical characteristics of the actuator.<br><br> -->
+                        <!-- The software that I developed included a non-linear model of the EMA and software tools used to test EMAs. -->
+                        <!-- In this video you can see the characterized EMA in the closed-loop system being used to model the dynamics of a mass-spring-damper! -->
           </div>
         </div>
       </div>
@@ -63,16 +64,16 @@ template = "timeline.html"
             <hr>
           </div>
           <div class="text">
-Bachelor of Science at Virginia Tech with a double major in Computer Engineering and Electrical 
+                    Bachelor of Science at Virginia Tech with a double major in Computer Engineering and Electrical 
                     Engineering (with focuses in Machine Learning and Controls, Robotics & Autonomy, respectively).<br><br>
-                    During my undergraduate studies I also worked on two design teams: Solar Car and Human Powered Submarine.
-                    For Solar Car I worked with Leads to develop the overall E/E architecture of the car and 
-                    designs for the car's lithium-ion battery.
-                    For the Human Powered Submarine I used a single board computer to develop a GUI for the submarine pilot,
-                    aiding them in navigating and guiding the submarine.<br><br>
-                    <img src="/images/pacman.png" height="110" width=auto style="float:left; margin-right: 15px;">
-                    I also participated in undegraduate research with Professors Thinh Doan and Michael Hsiao, developing 
-                    symbolic reinforcement learning architectures to play atari games.
+                    <!-- During my undergraduate studies I also worked on two design teams: Solar Car and Human Powered Submarine. -->
+                    <!-- For Solar Car I worked with Leads to develop the overall E/E architecture of the car and  -->
+                    <!-- designs for the car's lithium-ion battery. -->
+                    <!-- For the Human Powered Submarine I used a single board computer to develop a GUI for the submarine pilot, -->
+                    <!-- aiding them in navigating and guiding the submarine.<br><br> -->
+                    <!-- <img src="/images/pacman.png" height="110" width=auto style="float:left; margin-right: 15px;"> -->
+                    <!-- I also participated in undegraduate research with Professors Thinh Doan and Michael Hsiao, developing  -->
+                    <!-- symbolic reinforcement learning architectures to play atari games. -->
           </div>
         </div>
       </div>
@@ -92,7 +93,6 @@ Bachelor of Science at Virginia Tech with a double major in Computer Engineering
           <div class="text">
                     <img src="/images/INV.png" height="130" width=auto style="float:right; margin-left: 15px;">
             I was a Research Intern at the Grenoble Electrical Engineering Laboratory (G2ELab) in Grenoble, France, working on inverter control systems for microgrids &ndash; small power grid systems aiming to avoid future infastructure problems on the French power grid.<br><br>
-I also had the opportunity to witness lots of the research happening at the European Synchotron Radiation Facility (ESRF) and the Institut Laue-Langevin (ILL). 
           </div>
         </div>
       </div>
