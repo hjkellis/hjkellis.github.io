@@ -1,6 +1,6 @@
 +++
-title = "Keyboard Build"
-date = "2025-07-31"
+title = "Scylla Keyboard Build"
+date = "2025-08-08"
 
 [taxonomies]
 # tags=["documentation"]
@@ -166,4 +166,11 @@ Finally, there is a final layer that is triggered when both layer keys are press
 
 # Finished Product
 This is the final product, with keycaps installed!
+
+<center>
+    <img src="/images/scylla.jpg" height="350" width=auto style="margin-left: auto; margin-right: auto; display: block;">
+    <i>
+        Finished product
+    </i>
+</center>
 

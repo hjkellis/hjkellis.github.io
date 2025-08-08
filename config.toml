@@ -32,7 +32,7 @@ repo_url = "https://hunterwellis.github.io"
 menu = [
     { name = "/projects", url = "/projects", weight = 1 },
     { name = "/posts", url = "/posts", weight = 2 },
-    { name = "/timeline", url = "/timeline", weight = 3 },
+    # { name = "/timeline", url = "/timeline", weight = 3 },
     { name = "/about", url = "/about", weight = 4 },
 ]
 

@@ -10,9 +10,9 @@ template = "homepage.html"
       I am a <span id="ageDisplay"></span> year old Electrical & Computer Engineer with interests in control systems, robotics, and autonomy.
     </p>
     <p>
-      Checkout my <a href="./projects">projects</a>, <a href="./posts">blog posts</a>, or <a href="./timeline">experience</a>.
+      Checkout my <a href="./projects">projects</a>, <a href="./posts">blog posts</a>, or <a href="./about">experience</a>.
     </p>
-    <p><a href="/pdfs/Ellis-Hunter-Resume.pdf">PDF Resume</a></p>
+    <!-- <p><a href="/pdfs/Ellis-Hunter-Resume.pdf">PDF Resume</a></p> -->
   </div>
 </div>
 
