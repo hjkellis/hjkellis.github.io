@@ -32,6 +32,23 @@ title = "About"
       <div class="timeline-description">
         <div class="container">
           <div class="image">
+            <img src="/images/gtri.png" height="75" >
+            <br>
+            <div class="timeline-date">2020-2025</div>
+            <hr>
+          <div class="text">
+           Currently, I work at the Georgia Tech Research Insitute (GTRI) as an Avionics Research Engineer.<br><br>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="timeline-item">
+    <div class="timeline-content">
+      <div class="timeline-description">
+        <div class="container">
+          <div class="image">
             <img src="/images/VT.png" height="100" width="100">
             <br>
             <br>

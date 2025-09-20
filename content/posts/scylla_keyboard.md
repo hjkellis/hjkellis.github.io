@@ -10,7 +10,7 @@ date = "2025-08-08"
 # comment = true
 +++
 
-3D-Printed and handwired a Bastard Keyboards [Scylla](https://github.com/Bastardkb/Scylla).
+3D-Printed and handwired a Bastard Keyboards' [Scylla](https://github.com/Bastardkb/Scylla).
 
 Here is a list of materials I used:
 
