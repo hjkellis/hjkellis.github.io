@@ -57,7 +57,7 @@ title = "About"
           </div>
           <div class="text">
                     <img src="/images/world_example.png" height="140" width=auto style="float:right; margin-right: 15px;">
-            Master of Science in Computer Engineering at Virginia Tech through.<br><br>
+            Master of Science in Computer Engineering at Virginia Tech.<br><br>
             My thesis focused on robotics and I worked under the advisory of Professors Thinh Doan and Michael Hsiao.
           </div>
         </div>

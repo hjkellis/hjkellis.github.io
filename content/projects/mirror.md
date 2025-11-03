@@ -32,6 +32,13 @@ I only made slight modifcations to the internals of the mirror to get it to work
 From there I accesssed the Pi via SSH and had my way with this machine.
 
 # Software
-// TODO: software desciption
+[Github Repo](https://github.com/hunterwellis/Iris)
 <!-- I wrote the UI for the mirror in Qt and it integrates some basic widgets for time, weather, spotify, habit tracking, etc. I plan to eventually make this the frontend for a minimalist home automation system I have been working on called _Iris_ that integrates natural language processing with some basic home automation tasks. -->
+
+<center>
+    <img src="/images/mirror_fin.png" height="350" width=auto style="margin-left: auto; margin-right: auto; display: block;">
+    <i>
+        Mirror displaying weather and time.
+    </i>
+</center>
 
