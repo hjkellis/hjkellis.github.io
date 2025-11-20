@@ -4,7 +4,7 @@ description = "Repurposed hardware and custom software to create a home automati
 weight = 1
 
 [extra]
-local_image = "/images/mirror.jpg"
+local_image = "/images/mirror_fin.png"
 # link_to = "https://github.com/hunterwellis/Manipulator-Environment"
 +++
 
