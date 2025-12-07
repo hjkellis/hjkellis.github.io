@@ -217,6 +217,7 @@ title = "About"
         }
     </style>
 </head>
+</div>
 
 # Contact Info
 
