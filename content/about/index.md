@@ -76,11 +76,10 @@ title = "About"
             <hr>
           </div>
           <div class="text">
-                    <video controls="" height="200" width=auto name="Load Simulating Actuator" style="float:right; margin-left: 15px;" autoplay="" muted="">
-                        <source src="/videos/actuator.MOV">
-                    </video>
+                    <!-- <video controls="" height="200" width=auto name="Load Simulating Actuator" style="float:right; margin-left: 15px;" autoplay="" muted=""> -->
+                    <!--     <source src="/videos/actuator.MOV"> -->
+                    <!-- </video> -->
                         I worked with the Jacobs Space Exploration Group as a Thrust Vector Control Intern, developing the active hardware and software components of their new Active Inertial Load Simulator at NASA's Marshall Space Flight Center.<br><br>
-                        In this video you can see an actuator modeling the dynamics of a mass-spring-damper.
                     <!-- <img src="/images/VAB.jpg" height="200" width=auto style="float:right; margin-left: 15px;"> -->
                         <!-- Hardware elements that I aided in the integration of included measurement equipment such as an LVDT and full-bridge pancake load cell and test equipment such as an industrial electromechanical actuator (EMA), which entailed characterization testing and modeling of the physical characteristics of the actuator.<br><br> -->
                         <!-- The software that I developed included a non-linear model of the EMA and software tools used to test EMAs. -->
