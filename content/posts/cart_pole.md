@@ -40,7 +40,7 @@ action = 1 if ctrl_sig < 0 else 0  # discretize the output
 ```
 
 # Result
-This simple application of PID yeilds a decently stable output, but I still need to do some parameter tuning especially on the integral term.
+This simple application of PID yields a decently stable output, but I still need to do some parameter tuning especially on the integral term.
 
 <center>
     <img src="/images/cartpole.gif" height="350" width=auto >

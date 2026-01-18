@@ -11,7 +11,7 @@ local_image = "/images/mirror_fin.png"
 I modified a Lululemon workout mirror so that I could use a Raspberry Pi to display a custom dashboard through the mirrors display.
 
 # Hardware
-Lululemon stopped producing these mirrors and they require users to pay for a subscription to use the mirror for its inteded purpose. As a result I was able to snag one of these second had for \\$150 (they originally sold for \\$1500!). The hardware on these mirrors is great, especially compared to many of the DIY smart mirrors floating around the internet.
+Lululemon stopped producing these mirrors and they require users to pay for a subscription to use the mirror for its intended purpose. As a result I was able to snag one of these second had for \\$150 (they originally sold for \\$1500!). The hardware on these mirrors is great, especially compared to many of the DIY smart mirrors floating around the internet.
 
 <center>
     <img src="/images/mirror.jpg" height="350" width=auto style="margin-left: auto; margin-right: auto; display: block;">

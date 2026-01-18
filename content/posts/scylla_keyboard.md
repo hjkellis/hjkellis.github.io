@@ -32,7 +32,7 @@ The print took ~12 hours total (6 hours for each side) on a BambuLabs A1 mini.
 </center>
 
 # Wiring
-I hand soldered each board, this ended being the most labourious part of this project as each side of the keyboard has 29 keys. Additionally, with 3 solder joints (2 wires and a diode) per key, 30 connections to the microcontroller, and 3 connections to the AUX jack, this worked out to $2 \times 29 + 2 \times 5 \times 6 + 2 \times 6 = 124$ solder joints in total. I also had to cut and strip each wire to fit properly into the case.
+I hand soldered each board, this ended being the most laborious part of this project as each side of the keyboard has 29 keys. Additionally, with 3 solder joints (2 wires and a diode) per key, 30 connections to the microcontroller, and 3 connections to the AUX jack, this worked out to $2 \times 29 + 2 \times 5 \times 6 + 2 \times 6 = 124$ solder joints in total. I also had to cut and strip each wire to fit properly into the case.
 
 <div style="display: flex; justify-content: center; align-items: center; gap: 20px;">
     <img src="/images/kb_keycaps.jpg" height="350" style="width: auto;">
@@ -165,7 +165,7 @@ Finally, there is a final layer that is triggered when both layer keys are press
 </small>
 
 # Finished Product
-This is the final product, with keycaps installed!
+This is the final product with keycaps installed!
 
 <center>
     <img src="/images/scylla.jpg" height="350" width=auto style="margin-left: auto; margin-right: auto; display: block;">
