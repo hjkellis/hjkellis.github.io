@@ -16,7 +16,7 @@ template = "homepage.html"
 </div>
 
 <script>
-  const birthDate = new Date("2001-11-20T00:00:00Z");
+  const birthDate = new Date("2002-01-01T00:00:00Z");
 
   function updateAge() {
     const now = new Date();
