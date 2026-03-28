@@ -12,4 +12,4 @@ A simple STM32-based board that takes in a audio signal through a MEMS microphon
 <img src="/images/business_card.jpg" alt="business card"
      style="float:left; display: block; margin: 20 0; width: 100%;">
 
-[project repo](https://github.com/hunterwellis/PCB-Business-Card)
+[project repo](https://github.com/hjkellis/PCB-Business-Card)

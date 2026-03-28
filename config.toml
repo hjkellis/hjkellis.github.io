@@ -1,4 +1,4 @@
-base_url = "https://hunterwellis.github.io"
+base_url = "https://hjkellis.github.io"
 title = "Hunter Ellis"
 description = "portfolio website"
 build_search_index = true
@@ -27,7 +27,7 @@ fancy_code = true
 dynamic_note = true           # a note that can be toggled
 mathjax = true
 mathjax_dollar_inline_enable = true
-repo_url = "https://hunterwellis.github.io"
+repo_url = "https://hjkellis.github.io"
 
 menu = [
     { name = "/projects", url = "/projects", weight = 1 },
@@ -37,7 +37,7 @@ menu = [
 ]
 
 socials = [
-    { name = "github", url = "https://github.com/hunterwellis/", icon = "github" },
+    { name = "github", url = "https://github.com/hjkellis/", icon = "github" },
     { name = "linkedin", url = "https://www.linkedin.com/in/ellishw/", icon = "linkedin" },
     { name = "mail", url = "mailto:elliswhunter+website@gmail.com", icon = "email" },
     # { name = "youtube", url = "https://www.linkedin.com/in/ellishw/", icon = "youtube" },

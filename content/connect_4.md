@@ -18,4 +18,4 @@ Connect 4 is a solved game, meaning for any given game position the solution can
 # Optimizations
 
 
-Source code for this project can be found [here](https://github.com/hunterwellis/C4-Engine) on my github.
+Source code for this project can be found [here](https://github.com/hjkellis/C4-Engine) on my github.

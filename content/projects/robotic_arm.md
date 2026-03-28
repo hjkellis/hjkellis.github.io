@@ -5,11 +5,11 @@ weight = 0
 
 [extra]
 local_image = "/images/arm.jpg"
-# link_to = "https://github.com/hunterwellis/Manipulator-Environment"
+# link_to = "https://github.com/hjkellis/Manipulator-Environment"
 +++
 
 # Intro
-This project article documents building of a 6-DOF robotic arm (modified version of an [open-source hardware design by tw2ka](https://www.dropbox.com/scl/fi/mgowac0a7bwx7u2pcz12b/Arduino-robot-arm-files-step.zip?rlkey=3cpy6x4wcpfr1s548s7qxxex5&e=2&dl=0) with custom electronics and firmware). Additionally, the hardware files, software packages, and firmware for this project can be found [here](https://github.com/hunterwellis/Manipulator-Environment).
+This project article documents building of a 6-DOF robotic arm (modified version of an [open-source hardware design by tw2ka](https://www.dropbox.com/scl/fi/mgowac0a7bwx7u2pcz12b/Arduino-robot-arm-files-step.zip?rlkey=3cpy6x4wcpfr1s548s7qxxex5&e=2&dl=0) with custom electronics and firmware). Additionally, the hardware files, software packages, and firmware for this project can be found [here](https://github.com/hjkellis/Manipulator-Environment).
 
 <center>
     <img src="/images/jsp_demo.gif" height="350" width=auto style="margin-left: auto; margin-right: auto; display: block;">
@@ -68,7 +68,7 @@ Closed-loop control of the stepper motors was managed by the custom RAMPS firmwa
 
 
 # Software
-The ROS2 packages for this project can be found [here](https://github.com/hunterwellis/Manipulator-Environment).
+The ROS2 packages for this project can be found [here](https://github.com/hjkellis/Manipulator-Environment).
 
 
 <center>

@@ -47,4 +47,4 @@ Time parameterized joint trajectory angles are calculated using the ```MoveIt!``
 
 // TODO: add video
 
-The packages I wrote to control my arm can be found [here](https://github.com/hunterwellis/Arm-Trajectory-Controller).
+The packages I wrote to control my arm can be found [here](https://github.com/hjkellis/Arm-Trajectory-Controller).
