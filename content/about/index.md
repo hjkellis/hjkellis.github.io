@@ -222,7 +222,7 @@ title = "About"
 
 Email: [elliswhunter@gmail.com](mailto:elliswhunter@gmail.com)  
 LinkedIn: [@ellishw](https://www.linkedin.com/in/ellishw)  
-Website: [ellishw.tech](https://ellishw.tech)
+Website: [hjkellis.github.io](https://hjkellis.github.io)
 
 <br>
 
