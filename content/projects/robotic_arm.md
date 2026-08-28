@@ -9,7 +9,7 @@ local_image = "/images/arm.jpg"
 +++
 
 # Intro
-This project article documents building of a 6-DOF robotic arm (modified version of an [open-source hardware design by tw2ka](https://www.dropbox.com/scl/fi/mgowac0a7bwx7u2pcz12b/Arduino-robot-arm-files-step.zip?rlkey=3cpy6x4wcpfr1s548s7qxxex5&e=2&dl=0) with custom electronics and firmware). Additionally, the hardware files, software packages, and firmware for this project can be found [here](https://github.com/hjkellis/Manipulator-Environment).
+This project article documents building of a 6-DOF robotic arm (modified version of an [open-source hardware design by tw2ka](https://www.dropbox.com/scl/fi/mgowac0a7bwx7u2pcz12b/Arduino-robot-arm-files-step.zip?rlkey=3cpy6x4wcpfr1s548s7qxxex5&e=2&dl=0) with custom electronics and firmware). Additionally, the hardware files, software packages, and firmware for this project can be found [here](https://github.com/hjkellis/arm-trajectory-controller).
 
 <center>
     <img src="/images/jsp_demo.gif" height="350" width=auto style="margin-left: auto; margin-right: auto; display: block;">
