@@ -7,7 +7,7 @@ template = "homepage.html"
 <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 20px;">
   <div style="flex: 1; min-width: 250px;">
     <p>
-      I am a <span id="ageDisplay"></span> year old Electrical & Computer Engineer with interests in control systems, robotics, and autonomy.
+      I am a <span id="ageDisplay"></span> year old Computer Engineer with interests in robotics and autonomy.
     </p>
     <p>
       Checkout my <a href="./projects">projects</a>, <a href="./posts">blog posts</a>, or <a href="./about">experience</a>.

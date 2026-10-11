@@ -34,10 +34,10 @@ title = "About"
           <div class="image">
             <img src="/images/gtri.png" height="75" >
             <br>
-            <div class="timeline-date">2020-2025</div>
+            <div class="timeline-date">2025-Present</div>
             <hr>
           <div class="text">
-           Currently, I work at the Georgia Tech Research Insitute (GTRI) as an Avionics Research Engineer.<br><br>
+           Currently, I work at the Georgia Tech Research Insitute (GTRI) on collaborative autonomy software.<br><br>
           </div>
         </div>
       </div>
@@ -58,7 +58,7 @@ title = "About"
           <div class="text">
                     <img src="/images/world_example.png" height="140" width=auto style="float:right; margin-right: 15px;">
             Master of Science in Computer Engineering at Virginia Tech.<br><br>
-            My thesis focused on robotics and I worked under the advisory of Professors Thinh Doan and Michael Hsiao.
+            My thesis focused on robotics and I worked under the advisory of Professors Thinh Doan and Michael Hsiao.<br><br>
           </div>
         </div>
       </div>
