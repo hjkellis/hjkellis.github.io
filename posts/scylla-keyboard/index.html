@@ -1,0 +1,85 @@
+<!doctype html><html class="dark light" lang=en><head><meta charset=UTF-8><meta content="IE=edge" http-equiv=X-UA-Compatible><meta content="width=device-width,initial-scale=1.0" name=viewport><meta content=https://hjkellis.github.io name=base><title>
+            
+                Scylla Keyboard Build
+            
+        </title><meta content="Scylla Keyboard Build" property=og:title><meta content="portfolio website" property=og:description><meta content="portfolio website" name=description><link href=/icons/favicon.png rel=icon type=image/png><link href=https://hjkellis.github.io/fonts.css rel=stylesheet><script src=https://hjkellis.github.io/js/codeblock.js></script><script src=https://hjkellis.github.io/js/toc.js></script><script src=https://hjkellis.github.io/js/note.js></script><script>MathJax = {
+              tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']]
+              }
+            };</script><script async id=MathJax-script src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js></script><link title="Hunter Ellis" href=https://hjkellis.github.io/atom.xml rel=alternate type=application/atom+xml><link href=https://hjkellis.github.io/theme/light.css rel=stylesheet><link href=https://hjkellis.github.io/theme/dark.css id=darkModeStyle rel=stylesheet><script src=https://hjkellis.github.io/js/themetoggle.js></script><script>setTheme(getSavedTheme());</script><link href=https://hjkellis.github.io/main.css media=screen rel=stylesheet><link href=https://hjkellis.github.io/custom.css rel=stylesheet><script src="https://hjkellis.github.io/js/searchElasticlunr.min.js?h=3626c0ef99daa745b31e" defer></script><body><div class=content><header><div class=main><a href=https://hjkellis.github.io>Hunter Ellis</a><div class=socials><a class=social href=https://github.com/hjkellis/ rel=me> <img alt=github src=https://hjkellis.github.io/icons/social/github.svg> </a><a class=social href=https://www.linkedin.com/in/ellishw/ rel=me> <img alt=linkedin src=https://hjkellis.github.io/icons/social/linkedin.svg> </a><a class=social href=mailto:elliswhunter+website@gmail.com rel=me> <img alt=mail src=https://hjkellis.github.io/icons/social/email.svg> </a></div></div><nav><a href=https://hjkellis.github.io/projects style=margin-left:.25em>/projects</a><a href=https://hjkellis.github.io/posts style=margin-left:.25em>/posts</a><a href=https://hjkellis.github.io/about style=margin-left:.25em>/about</a><button title="$SHORTCUT to open search" class=search-button id=search-button><img alt=Search class=search-icon src=https://hjkellis.github.io/icons/search.svg></button><div class="search-modal js" aria-labelledby=modalTitle id=searchModal role=dialog><div id=modal-content><h1 class=page-header id=modalTitle>Search</h1><div id=searchBar><input aria-controls=results-container aria-expanded=false autocomplete=off id=searchInput placeholder=Search... role=combobox spellcheck=false><button title="Clear search" class=clear-button id=clear-search><svg viewbox="0 -960 960 960" xmlns=http://www.w3.org/2000/svg><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></button></div><div id=results-container><div id=results-info><span id=zero_results style=display:none>No results</span><span id=one_result style=display:none>1 result</span><span id=many_results style=display:none>$NUMBER results</span></div><div id=results role=listbox></div></div></div></div><a onclick="toggleTheme(); event.preventDefault();" href=# id=dark-mode-toggle> <img alt=Light id=sun-icon src=https://hjkellis.github.io/icons/sun.svg style=filter:invert()> <img alt=Dark id=moon-icon src=https://hjkellis.github.io/icons/moon.svg> </a><script>updateItemToggleTheme()</script></nav></header><main><article><div class=title><div class=page-header>Scylla Keyboard Build<span class=primary-color style=font-size:1.6em>.</span></div><div class=meta>Posted on <time>08-08-2025</time> :: 543 Words</div></div><div class=toc-container><h1 class=toc-title>Table of Contents</h1><ul class=toc-list><li><a href=https://hjkellis.github.io/posts/scylla-keyboard/#3d-printed-case>3D Printed Case</a><li><a href=https://hjkellis.github.io/posts/scylla-keyboard/#wiring>Wiring</a><li><a href=https://hjkellis.github.io/posts/scylla-keyboard/#firmware-keymaps>Firmware & Keymaps</a> <ul><li><a href=https://hjkellis.github.io/posts/scylla-keyboard/#base-layer>Base Layer</a><li><a href=https://hjkellis.github.io/posts/scylla-keyboard/#upper-layer>Upper Layer</a><li><a href=https://hjkellis.github.io/posts/scylla-keyboard/#lower-layer>Lower Layer</a><li><a href=https://hjkellis.github.io/posts/scylla-keyboard/#system-layer>System Layer</a></ul><li><a href=https://hjkellis.github.io/posts/scylla-keyboard/#finished-product>Finished Product</a></ul></div><section class=body><p>3D-Printed and handwired a Bastard Keyboards' <a href=https://github.com/Bastardkb/Scylla rel=external>Scylla</a>.<p>Here is a list of materials I used:<ul><li>58 $\times$ 1N4148 Flyback Diodes<li>58 $\times$ Gateron Brown Switches<li>2 $\times$ Pro Micro Dev Boards<li>2 $\times$ Female Aux Connectors<li>2 $\times$ Female Aux Connectors<li>3D Printer Filament</ul><h1 id=3d-printed-case><a aria-label="Anchor link for: 3d-printed-case" class=zola-anchor href=#3d-printed-case>3D Printed Case</a></h1><p>The print took ~12 hours total (6 hours for each side) on a BambuLabs A1 mini.</p><center> <img height=350 src=/images/kb_print.jpg style=margin-left:auto;margin-right:auto;display:block width=auto> <i> 3D printed case, still on the print-plate. </i> </center><h1 id=wiring><a aria-label="Anchor link for: wiring" class=zola-anchor href=#wiring>Wiring</a></h1><p>I hand soldered each board, this ended being the most laborious part of this project as each side of the keyboard has 29 keys. Additionally, with 3 solder joints (2 wires and a diode) per key, 30 connections to the microcontroller, and 3 connections to the AUX jack, this worked out to $2 \times 29 + 2 \times 5 \times 6 + 2 \times 6 = 124$ solder joints in total. I also had to cut and strip each wire to fit properly into the case.<div style=justify-content:center;align-items:center;gap:20px;display:flex><img height=350 src=/images/kb_keycaps.jpg style=width:auto><img height=350 src=/images/kb_wiring.jpg style=width:auto></div><div style=text-align:center;margin-top:10px><i>Keyboard wiring (minus the μC)</i></div><h1 id=firmware-keymaps><a aria-label="Anchor link for: firmware-keymaps" class=zola-anchor href=#firmware-keymaps>Firmware & Keymaps</a></h1><p>For the firmware I used QMK, an "open-source keyboard firmware for Atmel AVR and Arm USB families". I had to write my own hardware configuration files to match with my microcontroller and wiring. The documentation for QMK and made things super easy.<p>For keymaps I have 4 layers, one for typing, the second and third for symbols, arrow keys, and function keys, and the last is a special layer that is triggered when both layer keys are pressed that accesses some system features.<p>All layers have a transparent thumb cluster.<h2 id=base-layer><a aria-label="Anchor link for: base-layer" class=zola-anchor href=#base-layer>Base Layer</a></h2><p>For my base layer I am just using a standard QWERTY.</p><small> <small> <pre>
+<code>
+.-----------------------------------------.                                  .-----------------------------------------.
+| Esc  |   1  |   2  |   3  |   4  |   5  |                                  |   6  |   7  |   8  |   9  |   0  |  Bsp |
+|------+------+------+------+------+------|                                  |------+------+------+------+------+------|
+| Tab  |   Q  |   W  |   E  |   R  |   T  |                                  |   Y  |   U  |   I  |   O  |   P  |  \   |
+|------+------+------+------+------+------|                                  |------+------+------+------+------+------|
+| Del  |   A  |   S  |   D  |   F  |   G  |                                  |   H  |   J  |   K  |   L  |   ;  |  '   |
+|------+------+------+------+------+------|                                  |------+------+------+------+------+------|
+| Shft |   Z  |   X  |   C  |   V  |   B  |                                  |   N  |   M  |   ,  |   .  |   /  | Shft |
+'-----------------------------------------/                                  \-----------------------------------------'
+                                  / LOWER /---------------.    .---------------\ RAISE \
+                                 /       / Enter /  Del  /      \  Bsp  \ Space \       \
+                                '-------/       /       /        \       \       \-------'
+                                       /---------------/          \---------------\
+                                      /  Alt  / Ctrl  /            \  Ctrl \  Alt  \
+                                     /       /       /              \       \       \
+                                    '---------------'                '---------------'
+</code>
+</pre> </small> </small><h2 id=upper-layer><a aria-label="Anchor link for: upper-layer" class=zola-anchor href=#upper-layer>Upper Layer</a></h2><p>The upper layer contains symbols and function keys</p><small> <small> <pre>
+<code>
+ .-----------------------------------------.                                  .-----------------------------------------.
+ |      |  F1  |  F2  |  F3  |  F4  |  F5  |                                  |  F6  |  F7  |  F8  |  F9  |  F10 |  F11 |
+ |------+------+------+------+------+------|                                  |------+------+------+------+------+------|
+ |      |      |      |   [  |   ]  |      |                                  |   $  |   /  |  *   |  #   |   ~  |  F12 |
+ |------+------+------+------+------+------|                                  |------+------+------+------+------+------|
+ |  Ins |  !   |  @   |   (  |   )  |      |                                  |   %  |   -  |  +   |  =   |  ?   |      |
+ |------+------+------+------+------+------|                                  |------+------+------+------+------+------|
+ |      |      |      |   {  |   }  |      |                                  |   ^  |   &  |  |   |      |      |      |
+ '-----------------------------------------/                                  \-----------------------------------------'
+                                  /       /---------------.    .---------------\       \
+                                 /       /       /       /      \       \       \       \
+                                '-------/       /       /        \       \       \-------'
+                                       /---------------/          \---------------\
+                                      /       /       /            \       \       \
+                                     /       /       /              \       \       \
+                                    '---------------'                '---------------'
+</code>
+</pre> </small> </small><h2 id=lower-layer><a aria-label="Anchor link for: lower-layer" class=zola-anchor href=#lower-layer>Lower Layer</a></h2><p>The lower layer just contains arrow keys.</p><small> <small> <pre>
+<code>
+ .-----------------------------------------.                                  .-----------------------------------------.
+ |      |  F1  |  F2  |  F3  |  F4  |  F5  |                                  |  F6  |  F7  |  F8  |  F9  |  F10 |  F11 |
+ |------+------+------+------+------+------|                                  |------+------+------+------+------+------|
+ |      |      |      |   [  |   ]  |  +   |                                  |      |      |      |      |      |  F12 |
+ |------+------+------+------+------+------|                                  |------+------+------+------+------+------|
+ |  Ins |  !   |  @   |   (  |   )  |  -   |                                  |      | left | down |  up  | rght |      |
+ |------+------+------+------+------+------|                                  |------+------+------+------+------+------|
+ |      |      |      |   {  |   }  |  =   |                                  |      |      |      |      |      |      |
+ '-----------------------------------------/                                  \-----------------------------------------'
+                                  /       /---------------.    .---------------\       \
+                                 /       /       /       /      \       \       \       \
+                                '-------/       /       /        \       \       \-------'
+                                       /---------------/          \---------------\
+                                      /       /       /            \       \       \
+                                     /       /       /              \       \       \
+                                    '---------------'                '---------------'
+</code>
+</pre> </small> </small><h2 id=system-layer><a aria-label="Anchor link for: system-layer" class=zola-anchor href=#system-layer>System Layer</a></h2><p>Finally, there is a final layer that is triggered when both layer keys are pressed simultaniously that allows me to control the mouse and other system features.</p><small> <small> <pre>
+<code>
+ .-----------------------------------------.                                  .-----------------------------------------.
+ | BASE |      |      |      |      | BASE |                                  | BASE |      |      |      |      | BASE |
+ |------+------+------+------+------+------|                                  |------+------+------+------+------+------|
+ |      |      |      |      |      |  V+  |                                  |  B + |      |      |      |      |      |
+ |------+------+------+------+------+------|                                  |------+------+------+------+------+------|
+ |      |      |      |      |      |  V-  |                                  |  B - | ms_l | ms_d | ms_u | ms_r |      |
+ |------+------+------+------+------+------|                                  |------+------+------+------+------+------|
+ |      |      |      |      |      | Mute |                                  |      |      |      |      |      |      |
+ '-----------------------------------------/                                  \-----------------------------------------'
+                                  /       /---------------.    .---------------\       \
+                                 /       /       /       /      \       \       \       \
+                                '-------/       /       /        \       \       \-------'
+                                       /---------------/          \---------------\
+                                      /       /       /            \       \       \
+                                     /       /       /              \       \       \
+                                    '---------------'                '---------------'
+</code>
+</pre> </small> </small><h1 id=finished-product><a aria-label="Anchor link for: finished-product" class=zola-anchor href=#finished-product>Finished Product</a></h1><p>This is the final product with keycaps installed!</p><center> <img height=350 src=/images/scylla.jpg style=margin-left:auto;margin-right:auto;display:block width=auto> <i> Finished product </i> </center></section></article></main></div>

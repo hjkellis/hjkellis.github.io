@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Hunter Ellis</title>
+    <subtitle>portfolio website</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://hjkellis.github.io/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://hjkellis.github.io"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2025-08-08T00:00:00+00:00</updated>
+    <id>https://hjkellis.github.io/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Scylla Keyboard Build</title>
+        <published>2025-08-08T00:00:00+00:00</published>
+        <updated>2025-08-08T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://hjkellis.github.io/posts/scylla-keyboard/"/>
+        <id>https://hjkellis.github.io/posts/scylla-keyboard/</id>
+        
+        <content type="html" xml:base="https://hjkellis.github.io/posts/scylla-keyboard/">&lt;p&gt;3D-Printed and handwired a Bastard Keyboards&#x27; &lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Bastardkb&#x2F;Scylla&quot;&gt;Scylla&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;Here is a list of materials I used:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;58 $\times$ 1N4148 Flyback Diodes&lt;&#x2F;li&gt;
+&lt;li&gt;58 $\times$ Gateron Brown Switches&lt;&#x2F;li&gt;
+&lt;li&gt;2 $\times$ Pro Micro Dev Boards&lt;&#x2F;li&gt;
+&lt;li&gt;2 $\times$ Female Aux Connectors&lt;&#x2F;li&gt;
+&lt;li&gt;2 $\times$ Female Aux Connectors&lt;&#x2F;li&gt;
+&lt;li&gt;3D Printer Filament&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h1 id=&quot;3d-printed-case&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#3d-printed-case&quot; aria-label=&quot;Anchor link for: 3d-printed-case&quot;&gt;3D Printed Case&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;The print took ~12 hours total (6 hours for each side) on a BambuLabs A1 mini.&lt;&#x2F;p&gt;
+&lt;center&gt;
+    &lt;img src=&quot;&#x2F;images&#x2F;kb_print.jpg&quot; height=&quot;350&quot; width=auto style=&quot;margin-left: auto; margin-right: auto; display: block;&quot;&gt;
+    &lt;i&gt;
+        3D printed case, still on the print-plate.
+    &lt;&#x2F;i&gt;
+&lt;&#x2F;center&gt;
+&lt;h1 id=&quot;wiring&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#wiring&quot; aria-label=&quot;Anchor link for: wiring&quot;&gt;Wiring&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;I hand soldered each board, this ended being the most laborious part of this project as each side of the keyboard has 29 keys. Additionally, with 3 solder joints (2 wires and a diode) per key, 30 connections to the microcontroller, and 3 connections to the AUX jack, this worked out to $2 \times 29 + 2 \times 5 \times 6 + 2 \times 6 = 124$ solder joints in total. I also had to cut and strip each wire to fit properly into the case.&lt;&#x2F;p&gt;
+&lt;div style=&quot;display: flex; justify-content: center; align-items: center; gap: 20px;&quot;&gt;
+    &lt;img src=&quot;&#x2F;images&#x2F;kb_keycaps.jpg&quot; height=&quot;350&quot; style=&quot;width: auto;&quot;&gt;
+    &lt;img src=&quot;&#x2F;images&#x2F;kb_wiring.jpg&quot; height=&quot;350&quot; style=&quot;width: auto;&quot;&gt;
+&lt;&#x2F;div&gt;
+&lt;div style=&quot;text-align: center; margin-top: 10px;&quot;&gt;
+    &lt;i&gt;Keyboard wiring (minus the &amp;mu;C)&lt;&#x2F;i&gt;
+&lt;&#x2F;div&gt;
+&lt;h1 id=&quot;firmware-keymaps&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#firmware-keymaps&quot; aria-label=&quot;Anchor link for: firmware-keymaps&quot;&gt;Firmware &amp;amp; Keymaps&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;For the firmware I used QMK, an &quot;open-source keyboard firmware for Atmel AVR and Arm USB families&quot;. I had to write my own hardware configuration files to match with my microcontroller and wiring. The documentation for QMK and made things super easy.&lt;&#x2F;p&gt;
+&lt;p&gt;For keymaps I have 4 layers, one for typing, the second and third for symbols, arrow keys, and function keys, and the last is a special layer that is triggered when both layer keys are pressed that accesses some system features.&lt;&#x2F;p&gt;
+&lt;p&gt;All layers have a transparent thumb cluster.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;base-layer&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#base-layer&quot; aria-label=&quot;Anchor link for: base-layer&quot;&gt;Base Layer&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;For my base layer I am just using a standard QWERTY.&lt;&#x2F;p&gt;
+&lt;small&gt;
+&lt;small&gt;
+&lt;pre&gt;
+&lt;code&gt;
+.-----------------------------------------.                                  .-----------------------------------------.
+| Esc  |   1  |   2  |   3  |   4  |   5  |                                  |   6  |   7  |   8  |   9  |   0  |  Bsp |
+|------+------+------+------+------+------|                                  |------+------+------+------+------+------|
+| Tab  |   Q  |   W  |   E  |   R  |   T  |                                  |   Y  |   U  |   I  |   O  |   P  |  \   |
+|------+------+------+------+------+------|                                  |------+------+------+------+------+------|
+| Del  |   A  |   S  |   D  |   F  |   G  |                                  |   H  |   J  |   K  |   L  |   ;  |  &#x27;   |
+|------+------+------+------+------+------|                                  |------+------+------+------+------+------|
+| Shft |   Z  |   X  |   C  |   V  |   B  |                                  |   N  |   M  |   ,  |   .  |   &#x2F;  | Shft |
+&#x27;-----------------------------------------&#x2F;                                  \-----------------------------------------&#x27;
+                                  &#x2F; LOWER &#x2F;---------------.    .---------------\ RAISE \
+                                 &#x2F;       &#x2F; Enter &#x2F;  Del  &#x2F;      \  Bsp  \ Space \       \
+                                &#x27;-------&#x2F;       &#x2F;       &#x2F;        \       \       \-------&#x27;
+                                       &#x2F;---------------&#x2F;          \---------------\
+                                      &#x2F;  Alt  &#x2F; Ctrl  &#x2F;            \  Ctrl \  Alt  \
+                                     &#x2F;       &#x2F;       &#x2F;              \       \       \
+                                    &#x27;---------------&#x27;                &#x27;---------------&#x27;
+&lt;&#x2F;code&gt;
+&lt;&#x2F;pre&gt;
+&lt;&#x2F;small&gt;
+&lt;&#x2F;small&gt;
+&lt;h2 id=&quot;upper-layer&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#upper-layer&quot; aria-label=&quot;Anchor link for: upper-layer&quot;&gt;Upper Layer&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;The upper layer contains symbols and function keys&lt;&#x2F;p&gt;
+&lt;small&gt;
+&lt;small&gt;
+&lt;pre&gt;
+&lt;code&gt;
+ .-----------------------------------------.                                  .-----------------------------------------.
+ |      |  F1  |  F2  |  F3  |  F4  |  F5  |                                  |  F6  |  F7  |  F8  |  F9  |  F10 |  F11 |
+ |------+------+------+------+------+------|                                  |------+------+------+------+------+------|
+ |      |      |      |   [  |   ]  |      |                                  |   $  |   &#x2F;  |  *   |  #   |   ~  |  F12 |
+ |------+------+------+------+------+------|                                  |------+------+------+------+------+------|
+ |  Ins |  !   |  @   |   (  |   )  |      |                                  |   %  |   -  |  +   |  =   |  ?   |      |
+ |------+------+------+------+------+------|                                  |------+------+------+------+------+------|
+ |      |      |      |   {  |   }  |      |                                  |   ^  |   &amp;  |  |   |      |      |      |
+ &#x27;-----------------------------------------&#x2F;                                  \-----------------------------------------&#x27;
+                                  &#x2F;       &#x2F;---------------.    .---------------\       \
+                                 &#x2F;       &#x2F;       &#x2F;       &#x2F;      \       \       \       \
+                                &#x27;-------&#x2F;       &#x2F;       &#x2F;        \       \       \-------&#x27;
+                                       &#x2F;---------------&#x2F;          \---------------\
+                                      &#x2F;       &#x2F;       &#x2F;            \       \       \
+                                     &#x2F;       &#x2F;       &#x2F;              \       \       \
+                                    &#x27;---------------&#x27;                &#x27;---------------&#x27;
+&lt;&#x2F;code&gt;
+&lt;&#x2F;pre&gt;
+&lt;&#x2F;small&gt;
+&lt;&#x2F;small&gt;
+&lt;h2 id=&quot;lower-layer&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#lower-layer&quot; aria-label=&quot;Anchor link for: lower-layer&quot;&gt;Lower Layer&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;The lower layer just contains arrow keys.&lt;&#x2F;p&gt;
+&lt;small&gt;
+&lt;small&gt;
+&lt;pre&gt;
+&lt;code&gt;
+ .-----------------------------------------.                                  .-----------------------------------------.
+ |      |  F1  |  F2  |  F3  |  F4  |  F5  |                                  |  F6  |  F7  |  F8  |  F9  |  F10 |  F11 |
+ |------+------+------+------+------+------|                                  |------+------+------+------+------+------|
+ |      |      |      |   [  |   ]  |  +   |                                  |      |      |      |      |      |  F12 |
+ |------+------+------+------+------+------|                                  |------+------+------+------+------+------|
+ |  Ins |  !   |  @   |   (  |   )  |  -   |                                  |      | left | down |  up  | rght |      |
+ |------+------+------+------+------+------|                                  |------+------+------+------+------+------|
+ |      |      |      |   {  |   }  |  =   |                                  |      |      |      |      |      |      |
+ &#x27;-----------------------------------------&#x2F;                                  \-----------------------------------------&#x27;
+                                  &#x2F;       &#x2F;---------------.    .---------------\       \
+                                 &#x2F;       &#x2F;       &#x2F;       &#x2F;      \       \       \       \
+                                &#x27;-------&#x2F;       &#x2F;       &#x2F;        \       \       \-------&#x27;
+                                       &#x2F;---------------&#x2F;          \---------------\
+                                      &#x2F;       &#x2F;       &#x2F;            \       \       \
+                                     &#x2F;       &#x2F;       &#x2F;              \       \       \
+                                    &#x27;---------------&#x27;                &#x27;---------------&#x27;
+&lt;&#x2F;code&gt;
+&lt;&#x2F;pre&gt;
+&lt;&#x2F;small&gt;
+&lt;&#x2F;small&gt;
+&lt;h2 id=&quot;system-layer&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#system-layer&quot; aria-label=&quot;Anchor link for: system-layer&quot;&gt;System Layer&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;Finally, there is a final layer that is triggered when both layer keys are pressed simultaniously that allows me to control the mouse and other system features.&lt;&#x2F;p&gt;
+&lt;small&gt;
+&lt;small&gt;
+&lt;pre&gt;
+&lt;code&gt;
+ .-----------------------------------------.                                  .-----------------------------------------.
+ | BASE |      |      |      |      | BASE |                                  | BASE |      |      |      |      | BASE |
+ |------+------+------+------+------+------|                                  |------+------+------+------+------+------|
+ |      |      |      |      |      |  V+  |                                  |  B + |      |      |      |      |      |
+ |------+------+------+------+------+------|                                  |------+------+------+------+------+------|
+ |      |      |      |      |      |  V-  |                                  |  B - | ms_l | ms_d | ms_u | ms_r |      |
+ |------+------+------+------+------+------|                                  |------+------+------+------+------+------|
+ |      |      |      |      |      | Mute |                                  |      |      |      |      |      |      |
+ &#x27;-----------------------------------------&#x2F;                                  \-----------------------------------------&#x27;
+                                  &#x2F;       &#x2F;---------------.    .---------------\       \
+                                 &#x2F;       &#x2F;       &#x2F;       &#x2F;      \       \       \       \
+                                &#x27;-------&#x2F;       &#x2F;       &#x2F;        \       \       \-------&#x27;
+                                       &#x2F;---------------&#x2F;          \---------------\
+                                      &#x2F;       &#x2F;       &#x2F;            \       \       \
+                                     &#x2F;       &#x2F;       &#x2F;              \       \       \
+                                    &#x27;---------------&#x27;                &#x27;---------------&#x27;
+&lt;&#x2F;code&gt;
+&lt;&#x2F;pre&gt;
+&lt;&#x2F;small&gt;
+&lt;&#x2F;small&gt;
+&lt;h1 id=&quot;finished-product&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#finished-product&quot; aria-label=&quot;Anchor link for: finished-product&quot;&gt;Finished Product&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;This is the final product with keycaps installed!&lt;&#x2F;p&gt;
+&lt;center&gt;
+    &lt;img src=&quot;&#x2F;images&#x2F;scylla.jpg&quot; height=&quot;350&quot; width=auto style=&quot;margin-left: auto; margin-right: auto; display: block;&quot;&gt;
+    &lt;i&gt;
+        Finished product
+    &lt;&#x2F;i&gt;
+&lt;&#x2F;center&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Solving Cart Pole with a PID Controller</title>
+        <published>2025-07-10T00:00:00+00:00</published>
+        <updated>2025-07-10T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://hjkellis.github.io/cart-pole/"/>
+        <id>https://hjkellis.github.io/cart-pole/</id>
+        
+        <content type="html" xml:base="https://hjkellis.github.io/cart-pole/">&lt;p&gt;This is my solution to the classic Cart-Pole problem, using a simple PID controller implemented in python and Gymnasium.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;proportional-derivative-control&quot;&gt;Proportional-Derivative Control&lt;&#x2F;h1&gt;
+&lt;p&gt;For balancing the pole a simple PD controller was sufficient. In my implementation, I approximated the derivative error with a Tustin transform.&lt;&#x2F;p&gt;
+&lt;p&gt;PD Controller:
+$$u(t)=K_p\cdot e(t)+K_d\cdot\frac{de(t)}{dt}$$
+discrete approximation,
+$$\Rightarrow u[n]\approx K_p\cdot e[n]+2K_d\cdot\frac{e[n]-e[n-1]}{T_s}$$&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;integral-control&quot;&gt;Integral Control&lt;&#x2F;h1&gt;
+&lt;p&gt;For integral control, I used a backwards euler approximation - where $K_i\int^{t}_{0}{e(\tau)d\tau}$ is the integral term:&lt;&#x2F;p&gt;
+&lt;p&gt;$$K_i\int^{t}_{0}{e(\tau)d\tau}\approx K_i T_s\sum^{n}_{k=1}{e[k]}$$&lt;&#x2F;p&gt;
+&lt;p&gt;To deal with memory constraints, a ring buffer was used to capture the integral over a fixed range.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;code&quot;&gt;Code&lt;&#x2F;h1&gt;
+&lt;p&gt;Here is the very simple code snippet of my controller logic. $T_s$ and other constants are aggregated into the controller gains and &lt;code&gt;prev_errs&lt;&#x2F;code&gt; is a ring buffer.&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;python&quot;&gt;err = -obs[2]  # pole angle
+err_d = err - prev_errs[0]
+err_i = Ts * sum(prev_errs)
+
+ctrl_sig = Kp * err + Ki * err_i + Kd * err_d
+
+action = 1 if ctrl_sig &amp;lt; 0 else 0  # discretize the output
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h1 id=&quot;result&quot;&gt;Result&lt;&#x2F;h1&gt;
+&lt;p&gt;This simple application of PID yields a decently stable output, but I still need to do some parameter tuning especially on the integral term.&lt;&#x2F;p&gt;
+&lt;center&gt;
+    &lt;img src=&quot;&#x2F;images&#x2F;cartpole.gif&quot; height=&quot;350&quot; width=auto &gt;
+&lt;&#x2F;center&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Class Notes in LaTeX</title>
+        <published>2024-11-09T00:00:00+00:00</published>
+        <updated>2024-11-09T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://hjkellis.github.io/posts/latex-notes/"/>
+        <id>https://hjkellis.github.io/posts/latex-notes/</id>
+        
+        <content type="html" xml:base="https://hjkellis.github.io/posts/latex-notes/">&lt;p&gt;I decided to begin taking notes digitally. This takes a bit more time and effort than traditional pen an paper note taking, but these notes should last me throughout my career.
+The formatting of my notes is heavily based on &lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;SeniorMars&#x2F;dotfiles&#x2F;tree&#x2F;main&#x2F;latex_template&quot;&gt;SeniorMars&#x27; LaTeX template&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;Here are some of the notes I have taken so far:&lt;&#x2F;p&gt;
+&lt;embed src=&quot;&#x2F;pdfs&#x2F;als_notes.pdf&quot; type=&quot;application&#x2F;pdf&quot; width=100% height=1000px&gt;
+</content>
+        
+    </entry>
+</feed>
